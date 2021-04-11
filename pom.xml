@@ -16,6 +16,13 @@
 			<organization>Faculty of Informatics, University of Debrecen</organization>
 			<organizationUrl>https://www.inf.unideb.hu/</organizationUrl>
 		</developer>
+		<developer>
+			<id>hpeti</id>
+			<name>Péter Hegedűs</name>
+			<email>hpeti0912@gmailc.com</email>
+			<organization>Faculty of Informatics, University of Debrecen</organization>
+			<organizationUrl>https://www.inf.unideb.hu/</organizationUrl>
+		</developer>
 	</developers>
 	<dependencies>
 		<dependency>
