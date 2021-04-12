@@ -1,13 +1,11 @@
 package legoset;
 
 import album.Album;
-import album.Track;
 import jaxb.JAXBHelper;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.net.URL;
-import java.sql.Array;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.Set;
@@ -24,7 +22,7 @@ public class Main {
         legoset.setSubtheme("Solo");
         legoset.setYear(Year.of(2018));
         legoset.setPieces(519);
-        legoset.setPackaging(Packagings.BOX);
+        legoset.setPackaging(Packaging.BOX);
 
         legoset.setTags(Set.of("Starfighter", "Stormtrooper", "Star Wars", "Solo"));
 
@@ -35,6 +33,11 @@ public class Main {
 
         legoset.setMinifigs(minifigs);
 
+        legoset.setRating(new Ratings(468, 4.4));
+
+        JAXBHelper.toXML(legoset, System.out);
+        JAXBHelper.toXML(legoset, new FileOutputStream("legoset.xml"));
+        //System.out.println(JAXBHelper.fromXML(LegoSet.class, new FileInputStream("legoset.xml")));
     }
 
 }
