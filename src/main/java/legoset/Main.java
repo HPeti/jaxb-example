@@ -33,7 +33,7 @@ public class Main {
 
         legoset.setMinifigs(minifigs);
 
-        legoset.setRating(new Ratings(468, 4.4));
+        legoset.setRatings(new Ratings(468, 4.4));
 
         JAXBHelper.toXML(legoset, System.out);
         JAXBHelper.toXML(legoset, new FileOutputStream("legoset.xml"));

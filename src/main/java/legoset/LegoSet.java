@@ -36,5 +36,5 @@ public class LegoSet {
     private List<Minifig> minifigs;
 
     @XmlElement
-    private Ratings rating;
+    private Ratings ratings;
 }
