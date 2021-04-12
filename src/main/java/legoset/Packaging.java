@@ -1,6 +1,6 @@
 package legoset;
 
-public enum Packagings {
+public enum Packaging {
     BOX,
     POLYBAG
 }
